@@ -59,7 +59,7 @@ Let the robot to rotate the roller till the target color we want in the autonomo
 > ⚠️All the methods in this sectino is still in **Beta**.
 
 ```cpp
-void HighGoalShooterStart()
+void FlyWheelStart()
 ```
 
 Start spinning the Flywheel.
@@ -67,7 +67,13 @@ Start spinning the Flywheel.
 ------
 
 ```cpp
-void HighGoalShooterStop()
+void FlyWheelSlowStart()
+```
+
+Start spinning the Flywheel in 70% speed
+
+```cpp
+void FlyWheelStop()
 ```
 
 Stop spinning the Flywheel.
