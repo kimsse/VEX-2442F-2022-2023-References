@@ -8,6 +8,35 @@ This document will record all the methods as name and params for us to code the 
 
 > ⚠️ All the functions and variables are classified by the hardward and its functions
 
+### Global Variables
+```cpp
+bool drivetrainSlowSpeed = false;
+float intake_velocity = 600; //rpm
+float high_goal_speed = 100; //pct
+float moving_velocity = 600; //rpm
+float turning_velocity = 600; //rpm
+```
+
+`drivetrsinSlowSpeed` used to control the driving mode for the robot. **This method has already abandonded**
+`intake_velocity` set up the speed for the intake
+`high_goal_speed` set up the speed for the fly wheel
+`moving_velocity` set up the driving speed
+`turning_velocity` set up the turning speed in all situation
+
+### Driverbase Driving Speed
+
+```cpp
+void setSpeedToHigh()
+```
+
+This function will set the driving speed to full (normal)
+
+```cpp
+void setSpeedToLow()
+```
+
+This function will set the driving speed to slow speed (1/2 normal)
+
 ### Intake
 
 ```cpp
@@ -70,7 +99,9 @@ Start spinning the Flywheel.
 void FlyWheelSlowStart()
 ```
 
-Start spinning the Flywheel in 70% speed
+Start spinning the Flywheel in 25% speed
+
+------
 
 ```cpp
 void FlyWheelStop()
